@@ -1,0 +1,53 @@
+<ion-header-bar class="navheader">
+  <h1 class="title navtitle">上新</h1>
+</ion-header-bar>
+
+<div class="bar bar-subheader segmentbar">
+  <div class="button-bar segmentbar">
+    <a class="button " ng-repeat="titleObject in activityTitles" 
+            ng-class="{'navheader' : $index == currentIndex}" 
+            ng-click="changeTab($index)">
+       <p class="segtitle">{{titleObject.startTime}}</p>
+       <p class="segsubtitle" ng-if="titleObject.activityState == 1">抢购中</p>
+       <p class="segsubtitle" ng-if="titleObject.activityState == 2">即将开抢</p>
+    </a>
+    <a class="button"             
+            ng-class="{'navheader' : 3 == currentIndex}" 
+            ng-click="changeTab(activityTitles.length)">
+      <p class="segmore">更多预告</p>
+    </a>
+  </div>
+</div>
+
+  <div id="toolbar">
+  <img src="img/icon_gerenzhongxin.png" ng-click="jumpToMe()"/>
+  <div></div>
+  <img src="img/icon_gouwuche.png" ng-click="jumpToChart()"/>
+  </div>
+
+<ion-content class="has-subheader" style="background-color:#EFEFEF;">
+
+
+
+  <div class="sectionheader" ng-if="currentIndex < activityTitles.length">
+    <img src="img/icon_check.png" />
+    <p>限时限量 疯狂抢购</p>
+    <p class="timelabel">距离本场结束 。。。</p>
+  </div>
+  <ion-list class="activities" >
+    <ion-item class="activity" ng-repeat="activity in currentData" ng-if="currentIndex < activityTitles.length" ng-click="jumpToActivity(activity.activityId)">
+        <img src="{{activity.activityAdImage}}"/>
+        <div>
+          <p>{{activity.activityName}}</p>
+        </div>
+    </ion-item>
+
+    <ion-item class="activity" ng-repeat="activity in currentData" ng-if="currentIndex == activityTitles.length">
+        
+    </ion-item>    
+
+  </ion-list>
+
+
+
+</ion-content>

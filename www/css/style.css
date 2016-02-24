@@ -1,0 +1,155 @@
+/* Empty. Add your own CSS if you like */
+
+.navheader {
+	background-color:#FFEB0A;
+}
+
+.navtitle {
+	font-family: 'STHeitiSC-Medium';
+}
+
+.segmentbar {
+	padding:0px;
+	margin:0px;
+	height: 44px;
+}
+
+.segmentbar a{
+	padding: 0px;
+	margin:0px;
+	border-left:1px solid #EFEFEF;
+	border-right:1px solid #EFEFEF;
+}
+
+
+
+.segtitle {
+
+	padding:0px;
+	margin:0px;
+	height: 20px;
+	text-align: center;
+	font-size:16px;
+	font-family: 'HelveticaNeue-Medium';
+}
+
+.segsubtitle {
+	
+	margin-top:-6px;
+	height: 17px;
+	font-size:10px;
+	text-align: center;
+	font-family: 'STHeitiSC-Medium';
+}
+
+
+.segmore {
+	height: 44;
+	margin-top:6px;
+	font-family: 'STHeitiSC-Medium';
+	font-size:12px;
+}
+
+.sectionheader {
+	background-color: #EFEFEF;
+	width: 100%;
+	height: 36px;
+	padding: 0px;
+	margin:0px;
+}
+
+.sectionheader img {
+	width:16px;
+	height: 16px;
+	float:left;
+	padding: 0px;
+	margin: 10px 6px;
+}
+
+.sectionheader p {
+	font-family: 'STHeitiSC-Light';
+	font-size: 12px;
+	padding:10px 6px;
+	float: left;
+}
+
+.sectionheader .timelabel {
+	float :right;
+	font-family: 'HelveticaNeue-Medium';
+	color:#FF5555;
+}
+
+#toolbar {
+	position: fixed;
+	z-index: 5555;
+	width: 138px;
+	height: 44px;
+	background-color: #000000;
+	left: 0px;
+	bottom: 20px;
+	opacity:0.8;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#toolbar img {
+	float :left;
+	width: 68px;
+	height: 44px;
+	padding: 11px 24.3px 13px 24px;
+}
+
+#toolbar div {
+	background-color: #FFFFFF;
+	width: 1px;
+	height: 28px;
+	float: left;
+	margin-top: 8px;
+	opacity: 0.4;
+}
+
+.activities {
+
+	width: 100%;
+	height: 100%;
+	padding:0px;
+	margin-top: -10%;
+	
+	
+}
+.activity {
+
+	width: 100%;
+	height: 190px;
+	padding: 0px;
+	background-color: #EFEFEF;
+	
+}
+.activity img {
+	width: 100%;
+	height: 180px;
+	padding: 0px;
+
+}
+
+.activity div {
+	width: 100%;
+	height: 40px;
+	margin-top: -40px;
+	background-color: #000000;
+	opacity: 0.6;
+
+}
+
+.activity div p {
+	color:#FFFFFF;
+	font-family: 'STHeitiSC-Medium';
+	font-size: 14;
+	text-align: center;
+	padding: 12px 0px;
+}
+
+
+
+
+
